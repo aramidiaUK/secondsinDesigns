@@ -9,6 +9,8 @@ import RippleButtonsBody from './components/RippleButtons/RippleButtonsBody';
 import SideMenuAlt from './components/navigationMenu/SideMenuAlt';
 import DashboardBody from './components/adminDashboard/DashboardBody';
 import CommentBody from './components/commentsDesign/CommentBody';
+import CarouselBody from './components/CarouselDesign/CarouselBody';
+import MegaMenuBody from './components/megaMenuDesign/MegaMenuBody';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <FoldOutCardsBody/>
         <RippleButtonsBody/>
         <CommentBody/>
+        <CarouselBody/>
+        <MegaMenuBody/>
       </div>
     </div>
   );
