@@ -1,5 +1,6 @@
 import React from 'react'
 import FoldOutCard from './FoldOutCard'
+import './FoldOutCardsStyles.css';
 
 const FoldOutCardsBody = () => {
     return (

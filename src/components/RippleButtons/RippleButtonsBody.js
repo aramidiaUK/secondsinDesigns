@@ -1,6 +1,6 @@
 import React from 'react'
 import RippleButton from './RippleButton'
-
+import "./RippleButtonStyles.css";
 const RippleButtonsBody = () => {
 
     return (

@@ -5,7 +5,7 @@ const MegaMenuSubItem = ({linkTo, itemName, subText, icon, bgColor}) => {
   return (
     <a href={linkTo} className="sub-nav__box" 
         onMouseOver={(e) => e.currentTarget.style.background =  `${bgColor}`} 
-        onMouseLeave={(e) => e.currentTarget.style.background =  `initial`}>
+        onMouseLeave={(e) => e.currentTarget.style.background =  `#fff`}>
       <div className="icon-bg" style={{background: bgColor || '#777'}}>
         {icon}
       </div>

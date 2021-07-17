@@ -11,6 +11,7 @@ import DashboardBody from './components/adminDashboard/DashboardBody';
 import CommentBody from './components/commentsDesign/CommentBody';
 import CarouselBody from './components/CarouselDesign/CarouselBody';
 import MegaMenuBody from './components/megaMenuDesign/MegaMenuBody';
+import MegaMenuAltBody from './components/megaMenuDesign/MegaMenuAltBody';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <CommentBody/>
         <CarouselBody/>
         <MegaMenuBody/>
+        <MegaMenuAltBody/>
       </div>
     </div>
   );

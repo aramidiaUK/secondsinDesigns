@@ -10,6 +10,8 @@ import "swiper/components/pagination/pagination.min.css"
 
 import CarouselItem from "./CarouselItem";
 
+import "./CarouselStyles.css";
+
 // install Swiper modules
 SwiperCore.use([EffectFade, Navigation, Pagination]);
 

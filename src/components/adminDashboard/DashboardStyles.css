@@ -1,0 +1,313 @@
+/**** Dashboard Design ***/
+.dashboard-body {
+    position: relative;
+    min-height: 500px;
+    width: 700px;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+  }
+  
+  .dashboard-body .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+  }
+  
+  .dashboard-body .sidebar.active {
+    width: 240px;
+  }
+  
+  .dashboard-body .sidebar .sidebar-logo-content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  
+  .dashboard-body .sidebar.active .sidebar-logo-content .logo {
+    opacity: 1;
+  }
+  
+  .dashboard-body .sidebar .sidebar-logo-content .logo img {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+  }
+  
+  .dashboard-body .sidebar .sidebar-logo-content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+  }
+  
+  .dashboard-body .sidebar .sidebar-logo-content .logo-name {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .dashboard-body .sidebar #menu-btn {
+    position: absolute;
+    color: #fff;
+    left: 55%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+  }
+  
+  .dashboard-body .sidebar.active #menu-btn {
+    left: 90%;
+  }
+  
+  .dashboard-body .sidebar #menu-btn #opened {
+    display: none;
+  }
+  
+  .dashboard-body .sidebar #menu-btn.active #opened {
+    display: inline-block;
+  }
+  
+  .dashboard-body .sidebar #menu-btn.active #closed {
+    display: none;
+  }
+  
+  .dashboard-body .sidebar ul {
+    margin-top: 20px;
+  }
+  
+  .dashboard-body .sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 5px;
+    list-style: none;
+    line-height: 50px;
+  }
+  
+  .dashboard-body .sidebar ul li .tooltip {
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+  }
+  
+  .dashboard-body .sidebar.active ul li .tooltip {
+    display: none;
+  }
+  
+  .dashboard-body .sidebar ul li:hover .tooltip {
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+  }
+  
+  .dashboard-body .sidebar ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .dashboard-body .sidebar ul li .bx-search {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.5s ease;
+  }
+  
+  .dashboard-body .sidebar ul li .bx-search:hover {
+    background: #fff;
+    color: #1d1b31;
+  }
+  
+  .dashboard-body .sidebar.active ul li .bx-search:hover {
+    background: inherit;
+    color: #fff;
+  }
+  
+  .dashboard-body .sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  
+  .dashboard-body .sidebar ul li a:hover {
+    color: #11101d;
+    background-color: #fff;
+  }
+  
+  .dashboard-body .sidebar ul li ion-icon {
+    font-size: 16px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .dashboard-body .sidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .dashboard-body .sidebar ul li .list-item-link-name {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  
+  .dashboard-body .sidebar.active ul li .list-item-link-name {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .dashboard-body .sidebar .profile_content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .dashboard-body .sidebar .profile_content .profile {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+  }
+  
+  .dashboard-body .sidebar.active .profile_content .profile {
+    background: #1d1b31;
+  }
+  
+  .dashboard-body .sidebar .profile_content .profile .profile_details {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .dashboard-body .sidebar.active .profile_content .profile .profile_details {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .dashboard-body .sidebar .profile_content .profile .profile_details img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .dashboard-body
+    .sidebar
+    .profile_content
+    .profile
+    .profile_details
+    .name_occupation {
+    margin-left: 10px;
+  }
+  
+  .dashboard-body
+    .sidebar
+    .profile_content
+    .profile
+    .profile_details
+    .name_occupation
+    .name {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .dashboard-body
+    .sidebar
+    .profile_content
+    .profile
+    .profile_details
+    .name_occupation
+    .occupation {
+    font-size: 12px;
+  }
+  
+  .dashboard-body .sidebar .profile_content .profile #log_out {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    background: #1d1b31;
+  }
+  
+  .dashboard-body .sidebar.active .profile_content .profile #log_out {
+    left: 88%;
+  }
+  
+  .dashboard-body .sidebar.active .profile_content .profile #log_out {
+    background: none;
+  }
+  
+  .dashboard_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 0.5s ease;
+  }
+  
+  .dashboard_content .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 10px;
+  }
+  
+  .dashboard-body .sidebar.active ~ .home_content .dashboard_content {
+    width: calc(100% - 240px);
+    left: 240px;
+  }
+  /****End Dashboard Design****/

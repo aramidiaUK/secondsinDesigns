@@ -1,0 +1,294 @@
+/**Navigation menu styles**/
+
+.navigation-component-body {
+    background: #232c33;
+    width: 500px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .navigation {
+    position: relative;
+    height: 500px;
+    width: 70px;
+    background: #2b343b;
+    box-shadow: 10px 0 0 #4187f6;
+    border-left: 10px solid #2b343b;
+    overflow-x: hidden;
+    transition: width 0.5s;
+  }
+  
+  .navigation:hover {
+    width: 300px;
+  }
+  
+  .navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 40px;
+  }
+  
+  .navigation ul li.active {
+    background: #4187f6;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .navigation ul li.active a::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px;
+    box-shadow: 15px 15px 0 #4187f6;
+  }
+  
+  .navigation ul li.active a::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px;
+    box-shadow: 15px -15px 0 #4187f6;
+  }
+  
+  .navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navigation ul li a .list-item-icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  
+  .navigation ul li a .list-item-icon ion-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  
+  .navigation ul li a .list-item-text {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  
+  /* Navigation alt */
+  .navigation-alt-component-body {
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+  }
+  
+  .navigation-alt {
+    position: relative;
+    height: 470px;
+    width: 70px;
+    background: #2b343b;
+    border-left: 5px solid #4d5bf9;
+    box-sizing: initial;
+    background: #4d5bf9;
+    border-radius: 10px;
+    overflow-x: hidden;
+    transition: width 0.5s;
+  }
+  
+  .navigation-alt.active {
+    width: 300px;
+  }
+  
+  .navigation-alt ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+  }
+  
+  .navigation-alt ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .navigation-alt ul li.active {
+    background: #fff;
+  }
+  
+  .navigation-alt ul li b:nth-child(1) {
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+  }
+  
+  .navigation-alt ul li b:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 15px 0;
+    background: #4d5bf9;
+  }
+  
+  .navigation-alt ul li b:nth-child(2) {
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+  }
+  
+  .navigation-alt ul li b:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 15px 0 0;
+    background: #4d5bf9;
+  }
+  
+  .navigation-alt ul li.active b:nth-child(1),
+  .navigation-alt ul li.active b:nth-child(2) {
+    display: block;
+  }
+  
+  .navigation-alt ul li.active a {
+    color: #333;
+  }
+  
+  .navigation-alt ul li.active a::before {
+    /* content: ""; */
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px;
+    box-shadow: 15px 15px 0 #4187f6;
+  }
+  
+  .navigation-alt ul li.active a::after {
+    /* content: ""; */
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b343b;
+    border-radius: 50%;
+    box-shadow: 15px;
+    box-shadow: 15px -15px 0 #4187f6;
+  }
+  
+  .navigation-alt ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navigation-alt ul li a .list-item-icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 78px;
+    text-align: center;
+  }
+  
+  .navigation-alt ul li a .list-item-icon ion-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  
+  .navigation-alt ul li a .list-item-text {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+  }
+  
+  .close-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #4d5bf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-toggle.active {
+    background: #ff4d89;
+  }
+  
+  .close-toggle ion-icon {
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+  }
+  
+  .close-toggle ion-icon.open,
+  .close-toggle.active ion-icon.close {
+    display: block;
+  }
+  
+  .close-toggle ion-icon.close,
+  .close-toggle.active ion-icon.open {
+    display: none;
+  }
+  
+  /*** End Navigation menu styles ***/

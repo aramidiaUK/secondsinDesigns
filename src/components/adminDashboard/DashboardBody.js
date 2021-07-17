@@ -2,6 +2,8 @@ import React from "react";
 import DashboardSidebar from "./DashboardSidebar";
 import DashboardSidebarItem from "./DashboardSidebarItem";
 
+import "./DashboardStyles.css";
+
 const DashboardBody = () => {
   return (
     <div className="dashboard-body">

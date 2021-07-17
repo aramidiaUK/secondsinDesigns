@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import SideMenuItem from "./SideMenuItem";
+import "./NavigationStyles.css";
 
 const SideMenu = () => {
   useEffect(() => {

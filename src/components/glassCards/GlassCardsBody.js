@@ -1,6 +1,6 @@
 import React from 'react'
 import GlassCard from './GlassCard'
-
+import "./GlassCardStyles.css";
 const GlassCardsBody = () => {
     return (
         <div className="glassCardsBody">

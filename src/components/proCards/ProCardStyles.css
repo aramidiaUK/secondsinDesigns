@@ -1,0 +1,107 @@
+/***Pro Card Look***/
+.proCardsBody {
+    height: 600px;
+    width: 600px;
+    background: radial-gradient(#777, #222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card.pro {
+    position: relative;
+    width: 340px;
+    height: 450px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card.pro .circle {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 500px;
+    background: #333;
+    clip-path: circle();
+  }
+  
+  .card.pro .circle:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1000;
+    pointer-events: none;
+  }
+  
+  .card.pro .circle .imgBox-pro {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 340px;
+    height: 310px;
+    background: #fd0;
+    opacity: 0.75;
+  }
+  
+  .card.pro .circle .imgBox-pro img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    transition: 0.5s;
+    transform-origin: top;
+  }
+  
+  .card.pro .circle .imgBox-pro:hover img {
+    transform: scale(1.5);
+  }
+  
+  .card.pro .card-pro-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    background: #fff;
+    padding: 20px 30px;
+  }
+  
+  .card.pro .card-pro-content ion-icon {
+    color: #0077b5;
+    font-size: 1.25rem;
+  }
+  
+  .card.pro .card-pro-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 0px;
+  }
+  
+  .card.pro .card-pro-content .textIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card.pro .card-pro-content .textIcon h4 {
+    font-weight: 400;
+    color: #e91363;
+  }
+  
+  .card.pro .card-pro-content .textIcon ion-icon {
+    color: #e91363;
+  }
+  
+  /***End Pro Card Look***/

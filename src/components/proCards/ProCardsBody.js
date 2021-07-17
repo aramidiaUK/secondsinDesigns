@@ -1,5 +1,6 @@
 import React from 'react'
 import ProCard from './ProCard'
+import "./ProCardStyles.css";
 
 const ProCardsBody = () => {
     return (

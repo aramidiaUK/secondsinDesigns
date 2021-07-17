@@ -1,7 +1,7 @@
 import React from "react";
 import MegaMenuItem from "./MegaMenuItem";
 import MegaMenuSubItem from "./MegaMenuSubItem";
-
+import "./MegaMenuStyles.css"
 const MegaMenuBody = () => {
   return (
     <div className="megaMenuBody">

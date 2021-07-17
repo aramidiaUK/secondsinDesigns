@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ChatBox from "./ChatBox";
 import Comment from "./Comment";
+import "./CommentsStyles.css";
 
 const CommentBody = ({responseCount}) => {
   const [commentState, setCommentState] = useState("");

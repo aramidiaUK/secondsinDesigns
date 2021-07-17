@@ -8,6 +8,8 @@ import "swiper/components/pagination/pagination.min.css";
 
 import SwipeSlideCardContent from "./SwipeSlideCardContent";
 
+import "./SwipingCardsStyles.css";
+
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 

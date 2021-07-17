@@ -1,0 +1,166 @@
+/**** Mega menu Design *****/
+
+.megaMenuBody {
+    background: #28282b;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 12px;
+  }
+  
+  header.nav-header {
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+  }
+  
+  .nav-header .row {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .nav-header a {
+    color: #252222;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .nav-header .nav-menu {
+    display: inline-block;
+    vertical-align: top;
+    margin: 22px;
+    margin-left: 50px;
+  }
+  
+  .nav-header .nav-menu ul {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  
+  .nav-header .nav-menu ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-header .nav-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 22px;
+    position: relative;
+  }
+  
+  .nav-header .nav-menu ul li > a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #252222;
+    font-weight: 500;
+  }
+  
+  .nav-header .nav-menu .sub-nav {
+    display: flex;
+    background: #f7f7f7;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    left: -120px;
+    padding: 16px;
+    position: absolute;
+    top: 100%;
+    width: 583px;
+    transition: all .3s ease;
+  }
+  
+  .sub-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 97.5%;
+    left: 170px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border: solid transparent;
+    border-color: rgba(252,252,252, 0);
+    border-bottom-color: #f7f7f7;
+    border-width: 20px;
+    border-radius: 2px;
+    margin-left: -24px;
+  }
+  
+  #services:hover .sub-nav {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .sub-nav .sub-nav__col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .sub-nav__box {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    margin: 4px 0;
+    min-height: 100px;
+    padding: 24px 14px 24px 96px;
+    position: relative;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .sub-nav__box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .sub-nav__box h4 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    color: #292034;
+  }
+  
+  .sub-nav__box p  {
+    font-size: 14px;
+    color: rgba(0,0,0, .567);
+    line-height: 24px;
+  }
+  
+  .sub-nav__box:hover h4, .sub-nav__box:hover p {
+    color: #fff;
+  }
+  
+  .icon-bg {
+    height: 64px;
+    width: 64px;
+    background: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 14px;
+  }
+  
+  .icon-bg i {
+   color: #fff;
+   font-size: 30px;
+  }
+  
+  /**** End Mega menu Design ****/
