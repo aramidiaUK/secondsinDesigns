@@ -12,7 +12,6 @@
         height: 100%;
 
         &-imgFrame {
-            width: 65vw;
             position: relative;
             height: 100%;
 
@@ -27,22 +26,24 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 35px;
+            padding: 0 30px;
             height: 100%;
-            width: 35vw;
+            width: 100%;
+            max-width: 750px;
 
             h2 {
-                font-size: 50px;
-                color: rgba(0,0,0,.888);
-                line-height: 47.5px;
+                font-size: 52px;
+                color: rgba(0, 0, 0, 0.888);
+                line-height: 50px;
                 margin-bottom: .65rem;
                 position: relative;
+                font-weight: 600;
 
                 span {
                     display: block;
                     color: rgba(0,0,0,.5788);
-                    font-size: 22.5px;
-                    font-weight: 600;
+                    font-size: 18px;
+                    font-weight: 500;
                 }
 
                 &::after {
@@ -68,7 +69,6 @@
                     width: 280px;
                     font-size: 20px;
                     border-radius: 5px;
-                    font-weight: 600;
 
                     &:nth-child(2) {
                         background: transparent;

@@ -1,0 +1,134 @@
+.si-login {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    &__content {
+        display:  flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        &-formArea {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 60px;
+            max-width: 650px;
+            width: 100%;
+
+            h1 {
+                font-size: 52px;
+                line-height: 55px;
+                font-weight: 600;
+                color: rgba(0,0,0, 0.888);
+                letter-spacing: -.5px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    border-bottom: 4px solid var(--SISecondaryColor);
+                    width: 100px;
+                    height: 1rem;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: rgba(0,0,0,.5788);
+
+                    a {
+                        color: var(--SIPrimaryColor);
+                    }
+                }
+               
+            }
+
+            form {
+                width: 100%;
+                margin-top: 1rem;
+
+                input[type=text], 
+                input[type=email],
+                input[type=password]{
+                    width: 100%;
+                }
+
+                .form-group:not(:first-child) {
+                    margin-top: 1rem;
+                }
+
+                label {
+                    font-size: 13px;
+                    color: rgba(0,0,0,.82);
+                }
+
+                .btn {
+                    font-size: 20px;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+                
+                .alt-options {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 6px;
+
+                    .check-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        label {
+                            font-size: 16px;
+                            color: rgba(0,0,0,.82);
+                            font-weight: 500;
+                        }
+
+                    }
+
+                    .fp-content {
+                        display: flex;
+
+                        a {
+                            color: rgba(0,0,0,.6);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-imgFrame {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            filter: grayscale(1);
+            z-index: -1;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.7);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

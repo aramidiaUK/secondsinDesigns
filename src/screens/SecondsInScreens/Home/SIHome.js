@@ -10,11 +10,11 @@ const SIHome = () => {
                 </div>
                 <div className="si-home__content-textOptions">
                     <h2>
-                        No developer required. <span>Have your club website set up today.</span>
+                        No developer required. <span>Have your club web app set up today.</span>
                     </h2>
                     <div className="btn-group">
-                        <RippleButton buttonText="Sign up" linkTo="/"/>
-                        <RippleButton buttonText="Log in" linkTo="/"/>
+                        <RippleButton buttonText="Sign up" linkTo="/register"/>
+                        <RippleButton buttonText="Log in" linkTo="/login"/>
                     </div>
                 </div>
             </div> 

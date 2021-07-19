@@ -1,0 +1,110 @@
+.si-register {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        
+
+        &-formArea {
+            height: 100%;
+            width: 70%;
+            padding: 0 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            h1 {
+                max-width: 700px;
+                font-size: 52px;
+                line-height: 55px;
+                font-weight: 600;
+                color: rgba(0,0,0, 0.888);
+                letter-spacing: -.5px;
+                position: relative;
+                margin-bottom: 1rem;
+
+                &::after {
+                    content: '';
+                    border-bottom: 4px solid var(--SISecondaryColor);
+                    width: 100px;
+                    height: 1rem;
+                    position: absolute;
+                    bottom: -12.5px;
+                    left: 0;
+                }
+
+                span {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: rgba(0,0,0,.5788);
+                    line-height: 32px;
+                    margin-top: 1rem;
+
+                    a {
+                        color: var(--SIPrimaryColor);
+                    }
+                }  
+            }
+
+            form {
+                max-width: 700px;
+                width: 100%;
+
+                label {
+                    font-size: 13px;
+                    color: rgba(0,0,0,.82);
+                }
+
+                .form-group {
+                    margin-top: 1rem;
+                }
+
+                .form-options {
+                    margin-top: 1rem;
+                    .btn {
+                        width: 100%;
+                        font-size: 18px;
+                    }
+    
+                    .checkbox-custom input[type="checkbox"] + label {
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .form-terms {
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-top: 3rem;
+                width: 100%;
+                max-width: 600px;
+                text-align: center;
+
+                a {
+                    color: var(--SIPrimaryColor);
+                }
+            }
+            
+        }
+
+        &-imgFrame {
+            width: 40%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

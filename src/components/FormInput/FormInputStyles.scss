@@ -1,15 +1,26 @@
 .form-text-entry {
-    height: 50px;
+    height: 48px;
+    width: 100%;
     padding: 0 0.75rem;
-    border: 1.5px solid #e1e1e1;
-    border-bottom: 2px solid #e1e1e1;
-    border-radius: var(--border-radius);
-    /* box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.27); */
-    font-size: 1rem;
+    border: 2px solid #e1e1e1;
+    border-radius: var(--SIborder-radius);
+    box-shadow: 0 3px 2px -5px rgba(0, 0, 0, 0.27);
+    font-size: 16px;
+    line-height: 24px;
     position: relative;
     margin-top: 0.25rem;
     outline: none;
-    transition: border-bottom ease-in-out 0.4s;
+    transition: border-color ease-in-out 0.4s;
     display: block;
-    color: #333;
-  }
+    color: #343434;
+
+    &:active,
+    &:focus {
+        border-bottom-color: var(--SIPrimaryColor);
+    }
+
+    &.error {
+        border-color: var(--SIErrorColor)
+    }
+
+}

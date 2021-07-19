@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const RippleButton = ({buttonText, linkTo}) => {
     return (
-        <a href={linkTo || '#'} 
+        <NavLink to={linkTo || '#'} 
         alt="test" 
         className="btn ripple" 
         onMouseMove={(e) => {
@@ -14,7 +15,7 @@ const RippleButton = ({buttonText, linkTo}) => {
         }}
     >
         <span>{buttonText}</span>
-    </a>
+    </NavLink>
     )
 }
 
