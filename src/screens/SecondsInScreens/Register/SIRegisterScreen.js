@@ -5,6 +5,7 @@ import DateEntry from "../../../components/DateEntryInput/DateEntry";
 import PasswordInput from "../../../components/PasswordStrengthChecker/PasswordInput";
 import { NavLink } from "react-router-dom";
 import CustomCheckbox from "../../../components/CheckboxDesign/CustomCheckbox";
+import ToastMessage from "../../../components/ToastMessage/ToastMessage";
 const SIRegisterScreen = () => {
   const [forename, setForename] = useState("");
   const [surname, setSurname] = useState("");
@@ -19,6 +20,12 @@ const SIRegisterScreen = () => {
 
   return (
     <div className="si-register">
+      <ToastMessage
+        show={true}
+        type="success"
+        textHeader={"Registration Completed"}
+        textBody={"You have successfully registered"}
+      />
       <div className="si-register__content">
         <div className="si-register__content-formArea">
           <h1>

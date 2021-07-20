@@ -1,0 +1,29 @@
+.si-pricing {
+    &__content {
+        &-feature {
+            list-style: none;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-name {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(0,0,0,888);
+            }
+
+            &-status {
+                font-size: 25px;
+
+                .bx-check {
+                  color: var(--SISuccessColor);  
+                }
+
+                .bx-x {
+                    color: var(--SIErrorColor);  
+                }
+            }
+        }
+    }
+}

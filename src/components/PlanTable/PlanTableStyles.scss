@@ -1,0 +1,110 @@
+.si-planTable {
+    padding: 30px 40px;
+    /* border-top: 1px solid #555; */
+    margin-top: 1rem;
+    background: #fff;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, .12);
+
+    &.show {
+        opacity: 1;
+        height: 1100px;
+    }
+    
+
+    &__content {
+
+        h1 {
+            line-height: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: rgba(0,0,0,.7);
+            font-size: 30px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-bottom: .5rem;
+            
+            &.free::after {
+                content: '';
+                border-bottom: 4px solid var(--SISuccessColor);
+                width: 100px;
+                height: 1rem;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+            }
+
+            &.premium::after {
+                content: '';
+                border-bottom: 4px solid var(--SISecondaryColor);
+                width: 100px;
+                height: 1rem;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+            }
+
+            &.vip::after {
+                content: '';
+                border-bottom: 4px solid var(--SIAltColor);
+                width: 100px;
+                height: 1rem;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+            }
+
+            span {
+                font-weight:500;
+                font-size: 16px;
+                color: rgba(0,0,0,.7);
+            }
+        }
+    }
+
+    &__table-list li {
+        list-style: none;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 3fr 6fr .75fr;
+        align-items: center;
+        
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            padding-bottom: 1rem;
+        }
+
+        .plan-name{
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--SIAltColor);
+        }
+
+        .plan-description {
+            font-size: 14px;
+            color: rgba(0,0,0,.8);
+
+            small {
+                color: var(--SISecondaryColor);
+            }
+        }
+
+        i {
+            font-size: 35px;
+            justify-self: end;
+            align-self: start;
+
+            &.bx-check {
+                color: var(--SISuccessColor);
+            }
+
+            &.bx-x {
+                color: var(--SIErrorColor);
+            }
+        }
+    }
+}
