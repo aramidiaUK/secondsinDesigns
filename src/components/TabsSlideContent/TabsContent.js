@@ -3,7 +3,7 @@ import PlanTable from "../PlanTable/PlanTable";
 import PlanTableItem from "../PlanTable/PlanTableItem";
 import "./TabsContent.scss";
 const TabsContent = () => {
-  const [freeChecked, setFreeChecked] = useState(false);
+  const [freeChecked, setFreeChecked] = useState(true);
   const [premiumChecked, setPremiumChecked] = useState(false);
   const [vipChecked, setVipChecked] = useState(false);
 
@@ -19,6 +19,7 @@ const TabsContent = () => {
             setPremiumChecked(false)
             setVipChecked(false)
           }}
+          checked={freeChecked}
         />
         <input
           type="radio"
@@ -29,6 +30,7 @@ const TabsContent = () => {
             setVipChecked(false)
             setFreeChecked(false)
           }}
+          checked={premiumChecked}
         />
         <input
           type="radio"
@@ -39,6 +41,7 @@ const TabsContent = () => {
             setPremiumChecked(false)
             setFreeChecked(false)
           }}
+          checked={vipChecked}
         />
         <nav className="si-tabs__content-nav">
           <label htmlFor="free" className="free">

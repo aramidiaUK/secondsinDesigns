@@ -14,6 +14,7 @@ const PricingCard = ({currencySymbol, price, packageName, primaryColor, ribbon, 
                         <div className="inner-area" style={{background: primaryColor}}>
                             <span className="text">{currencySymbol}</span>
                             <span className="price">{price}</span>
+                            <span className="period">monthly</span>
                         </div>
                     </div>
                 </div>
