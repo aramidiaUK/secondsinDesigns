@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import CustomCheckbox from "../../../components/CheckboxDesign/CustomCheckbox";
-import FormInput from "../../../components/FormInput/FormInput";
+import CustomCheckbox from "../../../../components/CheckboxDesign/CustomCheckbox";
+import FormInput from "../../../../components/FormInput/FormInput";
 import "./SILoginStyles.scss";
 
 const SILoginScreen = () => {

@@ -23,6 +23,7 @@
 
             h1 {
                 max-width: 700px;
+                width: 100%;
                 font-size: 52px;
                 line-height: 55px;
                 font-weight: 600;
@@ -46,8 +47,8 @@
                     font-size: 16px;
                     font-weight: 500;
                     color: rgba(0,0,0,.5788);
-                    line-height: 32px;
-                    margin-top: 1rem;
+                    line-height: 26px;
+                    margin-top: .5rem;
 
                     a {
                         color: var(--SIPrimaryColor);
@@ -73,7 +74,20 @@
                     .btn {
                         width: 100%;
                         font-size: 18px;
+                        padding: 20px;
+
+                        &:hover {
+                            background: var(--SIPrimaryColor);
+                        }
                     }
+
+                    a.btn {
+                        display: flex;
+                        grid-auto-flow: column;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
     
                     .checkbox-custom input[type="checkbox"] + label {
                         font-weight: 400;
@@ -106,5 +120,24 @@
                 object-fit: cover;
             }
         }
+    }
+}
+
+.nav-header.register {
+    width: 63%;
+    padding: 0 2rem;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .responsive-menu {
+        padding: 1rem 0;
+        justify-self: end;
+        margin: 0;
+    }
+
+    .btn-group {
+        display: none;
     }
 }

@@ -1,18 +1,22 @@
-import React from "react";
-import DashboardBody from "../../components/adminDashboard/DashboardBody";
+import React, { useState } from "react";
+import DashboardBody from "../../components/AdminDashboard/DashboardBody";
 import CarouselBody from "../../components/CarouselDesign/CarouselBody";
-import CommentBody from "../../components/commentsDesign/CommentBody";
-import FoldOutCardsBody from "../../components/foldOutCards/FoldOutCardsBody";
-import GlassCardsBody from "../../components/glassCards/GlassCardsBody";
-import MegaMenuAltBody from "../../components/megaMenuDesign/MegaMenuAltBody";
-import MegaMenuBody from "../../components/megaMenuDesign/MegaMenuBody";
-import SideMenu from "../../components/navigationMenu/SideMenu";
-import SideMenuAlt from "../../components/navigationMenu/SideMenuAlt";
-import ProCardsBody from "../../components/proCards/ProCardsBody";
+import CommentBody from "../../components/CommentsDesign/CommentBody";
+import CustomSelect from "../../components/CustomSelect/CustomSelect";
+import FoldOutCardsBody from "../../components/FoldOutCards/FoldOutCardsBody";
+import GlassCardsBody from "../../components/GlassCards/GlassCardsBody";
+import MegaMenuAltBody from "../../components/MegaMenuDesign/MegaMenuAltBody";
+import MegaMenuBody from "../../components/MegaMenuDesign/MegaMenuBody";
+import SideMenu from "../../components/NavigationMenu/SideMenu";
+import SideMenuAlt from "../../components/NavigationMenu/SideMenuAlt";
+import ProCardsBody from "../../components/ProCards/ProCardsBody";
+import RangeSlider from "../../components/RangeSlider/RangeSlider";
 import RippleButtonsBody from "../../components/RippleButtons/RippleButtonsBody";
-import SwipingCardsBody from "../../components/swiperCards/SwipingCardsBody";
+import SwipingCardsBody from "../../components/SwiperCards/SwipingCardsBody";
+import { colors } from "../../data/colors";
 
 const SIComponents = () => {
+  const [selectedColor, setSelectedColor] = useState("");
   return (
     <div className="components">
       <SideMenu />
@@ -27,6 +31,8 @@ const SIComponents = () => {
       <CarouselBody />
       <MegaMenuBody />
       <MegaMenuAltBody />
+      <RangeSlider/>
+      <CustomSelect options={colors} selectedState={selectedColor} setSelectedState={setSelectedColor} />
     </div>
   );
 };

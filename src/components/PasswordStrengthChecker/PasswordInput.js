@@ -19,7 +19,7 @@ const PasswordInput = ({
     const strong = document.querySelector(".strong");
     const text = document.querySelector(".si-password__indicator-text");
     const showPasswordBtn = document.querySelector(".si-password__showBtn");
-    let no = 0;
+    let no = 1;
 
     let regExpWeak = /[a-z]/;
     let regExpMedium = /[0-9]/;
@@ -32,10 +32,10 @@ const PasswordInput = ({
       showPasswordBtn.style.opacity = 1;
 
       if (
-        e.currentTarget.value.length <= 3 &&
-        (e.currentTarget.value.match(regExpWeak) ||
-          e.currentTarget.value.match(regExpMedium) ||
-          e.currentTarget.value.match(regExpStrong))
+        (e.currentTarget.value.length <= 3 &&
+          e.currentTarget.value.match(regExpWeak)) ||
+        e.currentTarget.value.match(regExpMedium) ||
+        e.currentTarget.value.match(regExpStrong)
       )
         no = 1;
 

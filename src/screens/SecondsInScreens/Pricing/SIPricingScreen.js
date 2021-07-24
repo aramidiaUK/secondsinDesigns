@@ -1,10 +1,13 @@
 import React from "react";
 import PricingCard from "../../../components/PricingCard/PricingCard";
 import PricingCardFeature from "../../../components/PricingCard/PricingCardFeature";
+import ResponsiveMenu from "../../../components/ResponsiveMenu/ResponsiveMenu";
 import TabsContent from "../../../components/TabsSlideContent/TabsContent";
 import "./SIPricingStyles.scss";
 const SIPricingScreen = () => {
   return (
+    <>
+    <ResponsiveMenu/>
     <div className="si-pricing">
       <div className="si-pricing__content">
         <div className="si-pricing__content-banner">
@@ -108,6 +111,7 @@ const SIPricingScreen = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

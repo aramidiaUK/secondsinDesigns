@@ -48,7 +48,7 @@
 
                 &::after {
                     content: '';
-                    border-bottom: 4px solid #2196f3;
+                    border-bottom: 4px solid var(--SIPrimaryColor);
                     width: 100px;
                     height: 1rem;
                     position: absolute;
@@ -72,12 +72,12 @@
 
                     &:nth-child(2) {
                         background: transparent;
-                        color: rgba(0,0,0,.888);
-                        border: 2px solid rgba(0,0,0,.888);
+                        color: var(--SIPrimaryColor);
+                        border: 2px solid var(--SIPrimaryColor);
 
                         &:hover {
                             color: #fff;
-                            border-color: #2196f3;
+                            border-color: var(--SIPrimaryColor);
                         }
                     }
                 }

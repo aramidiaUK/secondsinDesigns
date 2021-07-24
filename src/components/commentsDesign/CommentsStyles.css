@@ -206,6 +206,7 @@
   .chat-box-text-area-cta-btns .btn .text {
     position: relative;
     z-index: 100;
+    letter-spacing: -.4px;
   }
   
   .chat-box-text-area-cta-btns .btn:disabled {

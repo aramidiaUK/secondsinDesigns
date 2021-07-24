@@ -1,0 +1,63 @@
+.color-select {
+    height: 48px;
+    width: 100%;
+    padding: 0 0.5rem;
+    border: 2px solid #e1e1e1;
+    border-radius: var(--SIborder-radius);
+    box-shadow: 0 3px 2px -5px rgba(0, 0, 0, .27);
+    font-size: 16px;
+    position: relative;
+    margin-top: 0.25rem;
+    outline: none;
+    transition: border-color ease-in-out 0.4s;
+    display: grid;
+    align-items: center;
+    color: #343434;
+    grid-template-columns: 1fr 4rem;
+
+    button {
+        width: 4rem;
+        background: var(--SIAltColor);
+        color: #fff;
+        border: none;
+        line-height: 35px;
+        justify-self: end;
+        border-radius: var(--ClubCardRadius);
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+            transform: none;
+            opacity: 0.8;
+          }
+      }
+
+      p {
+        margin: 0;
+        padding: 0 0.5rem;
+        color: #333;
+        font-size: 1rem !important;
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+      }
+
+      .color {
+        &-preview {
+            width: 2rem;
+            height: 1.5rem;
+            border-radius: 5px;
+            margin-right: 0.25rem;
+            position: relative;
+            box-shadow: 0 1px 65px 5px #ccc;
+      }
+      &-name {
+        font-weight: 400;
+        text-transform: capitalize;
+        font-size: 1rem;
+      }
+    }
+  }
+  

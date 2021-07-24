@@ -1,0 +1,8 @@
+.brand.si-register{
+    h1.brand-header {
+        font-size: 51px;
+        &::after {
+            border-color: var(--SIPrimaryColor);
+        }
+    }
+}

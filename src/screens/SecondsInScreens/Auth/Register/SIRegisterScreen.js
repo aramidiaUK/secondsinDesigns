@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./SIRegisterStyles.scss";
-import FormInput from "../../../components/FormInput/FormInput";
-import DateEntry from "../../../components/DateEntryInput/DateEntry";
-import PasswordInput from "../../../components/PasswordStrengthChecker/PasswordInput";
+import FormInput from "../../../../components/FormInput/FormInput";
+import DateEntry from "../../../../components/DateEntryInput/DateEntry";
+import PasswordInput from "../../../../components/PasswordStrengthChecker/PasswordInput";
 import { NavLink } from "react-router-dom";
-import CustomCheckbox from "../../../components/CheckboxDesign/CustomCheckbox";
-import ToastMessage from "../../../components/ToastMessage/ToastMessage";
+import CustomCheckbox from "../../../../components/CheckboxDesign/CustomCheckbox";
+import ToastMessage from "../../../../components/ToastMessage/ToastMessage";
+import ResponsiveMenu from "../../../../components/ResponsiveMenu/ResponsiveMenu";
 const SIRegisterScreen = () => {
   const [forename, setForename] = useState("");
   const [surname, setSurname] = useState("");
@@ -20,6 +21,7 @@ const SIRegisterScreen = () => {
 
   return (
     <div className="si-register">
+      <ResponsiveMenu classAddin="register" />
       <ToastMessage
         show={true}
         type="success"

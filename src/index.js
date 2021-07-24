@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+window.$fallbackLogo = "/assets/images/manu__logo.png";
+window.$fallbackFlag  = "/assets/images/manu__logo.png"
+window.$verifyBackDrop  = "/assets/images/verify.png"
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

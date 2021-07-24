@@ -1,0 +1,45 @@
+.tabs {
+    overflow: hidden;
+    display: flex;
+    column-gap: .5rem;
+    margin-top: 2rem;
+
+    .tabItem {
+
+        .tabLinks {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            background: var(--swiper-theme-color);
+            border-radius: var(--ClubCardRadius);
+            color: #fff;
+            font-size: 16px;
+            width: 12rem;
+
+            &.active {
+                background-color: var(--SISecondaryColor);
+            }
+
+            :hover {
+                background-color: #ddd;
+            }
+        }
+    }
+  }
+
+  .tabcontent {
+    display: none;
+    min-height: 400px;
+    overflow: hidden;
+    padding: 6px 0;
+    border-top: 1px solid rgba($color: #000000, $alpha: .1);
+    margin-top: 1rem;
+    transition: all .3s ease;
+
+    &.active {
+        display: block;
+    }
+}
