@@ -124,7 +124,7 @@ const SIRegisterBrandScreen = () => {
                   onChange={e => setImagePath(e.target.value)}
                   disabled={cropResult}
                 />
-                <label htmlFor="uploadImage" className="hs btn addon-upload">
+                <label htmlFor="uploadImage" className="btn addon-upload">
                   Click to upload image
                 </label>
                 <input

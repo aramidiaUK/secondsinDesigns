@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CustomCheckbox from "../../../../components/CheckboxDesign/CustomCheckbox";
 import FormInput from "../../../../components/FormInput/FormInput";
+import ResponsiveMenu from "../../../../components/ResponsiveMenu/ResponsiveMenu";
+import SIFooter from "../../../../components/SIFooter/SIFooter";
 import "./SILoginStyles.scss";
 
 const SILoginScreen = () => {
@@ -11,6 +13,7 @@ const SILoginScreen = () => {
 
   return (
     <div className="si-login">
+      <ResponsiveMenu classAddin="register"/>
       <div className="si-login__content">
         <div className="si-login__content-formArea">
           <h1>
@@ -53,6 +56,7 @@ const SILoginScreen = () => {
               </div>
             </div>
           </form>
+          <SIFooter/>
         </div>
         <div className="si-login__content-imgFrame">
           <img src="./assets/images/fans.jpeg" alt="multi-sport" />

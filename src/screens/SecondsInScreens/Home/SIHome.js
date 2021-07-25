@@ -13,7 +13,7 @@ const SIHome = () => {
                         No developer required. <span>Have your club web app set up today.</span>
                     </h2>
                     <div className="btn-group">
-                        <RippleButton buttonText="Sign up" linkTo="/register"/>
+                        <RippleButton buttonText="Learn More" linkTo="/about"/>
                         <RippleButton buttonText="Log in" linkTo="/login"/>
                     </div>
                 </div>

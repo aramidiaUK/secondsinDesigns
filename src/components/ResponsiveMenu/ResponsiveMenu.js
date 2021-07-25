@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import ResponsiveMenuItem from "./ResponsiveMenuItem";
-import ResponsiveMenuItemFooter from "./ResponsiveMenuItemFooter";
 import "./ResponsiveMenuStyles.scss";
 import ResponsiveMenuSubItem from "./ResponsiveMenuSubItem";
 const ResponsiveMenu = ({classAddin}) => {

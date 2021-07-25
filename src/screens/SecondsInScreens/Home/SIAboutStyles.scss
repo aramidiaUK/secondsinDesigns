@@ -1,0 +1,210 @@
+.si-about {
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 8rem;
+        
+
+        &-banner {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            &.alt {
+             background: #f9f9f9;
+            }
+
+            &.dark {
+                background: var(--SIPrimaryColor);
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    background: rgba(0,0,0,.3);
+                }
+
+                .si-about__content-banner-content {
+                    flex-direction: column;
+                    z-index: 1;
+                }
+
+                .imageBox { 
+                    width: 100%;
+                }
+
+                h1 {
+                    color: #fff;
+                    text-align: center;
+
+                    span {
+                        color: rgba(255,255,255, .7);
+                    }
+                }
+            }
+
+            &-content {
+                max-width: 1300px;
+                width: 100%;
+                height: 100%;
+                min-height: 425px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 4rem;
+                padding: 60px 0;
+                
+                h1 {
+                    font-size: 42px;
+                    font-weight: 600;
+                    text-align: left;
+                    line-height: 55px;
+                    letter-spacing: -.5px;
+                    color: rgba(0, 0, 0, 0.888);
+        
+                    span {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: .5rem 0;
+                        display: block;
+                        line-height: 30px;
+                        color: rgba(0,0,0,.6);
+                    }
+                }
+
+                .imageBox {
+                    width: 50%;
+                    border-radius: var(--SIborder-radius);
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .imgRow {
+                    width: 100%;
+                    display: -ms-flexbox; /* IE10 */
+                    display: flex;
+                    -ms-flex-wrap: wrap; /* IE10 */
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+
+                    .column {
+                        -ms-flex: 25%; /* IE10 */
+                        flex: 25%;
+                        padding: 0 4px;
+                        position: relative;
+
+                        .imageBox {
+                            margin-top: 4px;
+                            vertical-align: middle;
+                            width: 100%;
+                            border-radius: var(--SIborder-radius);
+                            transition: .4s ease;
+                            overflow: hidden;
+                            position: relative;
+
+                            .cover {
+                                height: 0;
+                                width: 100%;
+                                position: absolute;
+                                bottom: -10px;
+                                left: 0;
+                                transition: height .4s ease;
+                            }
+
+                            &:hover {
+                                .cover {
+                                    bottom: 0;
+                                    background: rgba(0,0,0,.3);
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                transition: .6s ease;
+                                overflow: hidden;
+                                
+                            &:hover {
+                                transform: scale(1.25);
+
+                            }
+                        }
+                        }
+                    }
+                }
+            }    
+        }   
+    }
+
+    .membership-widget {
+        display: grid;
+        position: relative;
+        justify-items: center;
+        row-gap: 1rem;
+        margin: 2rem;
+
+        .btn.ripple {
+            font-size: 20px;
+            background: #1b1b1b;
+        }
+
+        .si-pricing__content-plans {
+            background: none;
+            .si-pricing {
+        
+                &__content-plans {
+                height: auto;
+                background: none;
+        
+                &-container {
+                    column-gap: 0;
+                    padding: 60px 0;
+                }
+            }
+        
+                &Card {
+                    width: 340px;
+            
+                    &:nth-child(1) {
+                        margin-right: -1rem;
+                    }
+            
+                    &:nth-child(2) {
+                        transform: translateY(-20px);
+                    }
+            
+                    &:nth-child(3) {
+                        margin-left: -1rem;
+                        z-index: -1;
+                    }
+
+                    &__content-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

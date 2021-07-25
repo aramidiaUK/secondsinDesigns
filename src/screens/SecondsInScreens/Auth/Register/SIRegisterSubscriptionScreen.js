@@ -17,11 +17,11 @@ const SIRegisterSubscriptionScreen = () => {
           </h1>
           <form>
             <div className="split-group form-options">
-              <NavLink to="/register-theme" className="btn">
+              <NavLink to="/register-theme" className="btn ripple">
                 <i class="bx bx-left-arrow-alt" />
                 Previous
               </NavLink>
-              <NavLink to="/register-build" className="btn">
+              <NavLink to="/register-build" className="btn ripple">
                 Complete Setup
                 <i class="bx bx-right-arrow-alt" />
               </NavLink>

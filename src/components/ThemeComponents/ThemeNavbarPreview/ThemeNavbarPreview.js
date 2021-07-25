@@ -25,8 +25,6 @@ const ThemeNavbarPreview = ({textCasing, linkColors}) => {
             <div className="themed-nav__top-bar">
                 <div className="corp-brand"><h4>SecondsIn.</h4></div>
                 <div className="main-sponsors">
-                <span className="main-sponsors-item"><img src="./assets/images/aramedia_white.png" alt="nav-brand"/></span>
-                <span className="main-sponsors-item"><img src="./assets/images/BodyJunkies.jpeg" alt="nav-brand"/></span>
                 </div>
             </div>
             <div className="themed-nav__content">

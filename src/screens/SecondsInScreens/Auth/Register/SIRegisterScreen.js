@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import CustomCheckbox from "../../../../components/CheckboxDesign/CustomCheckbox";
 import ToastMessage from "../../../../components/ToastMessage/ToastMessage";
 import ResponsiveMenu from "../../../../components/ResponsiveMenu/ResponsiveMenu";
+import SIFooter from "../../../../components/SIFooter/SIFooter";
 const SIRegisterScreen = () => {
   const [forename, setForename] = useState("");
   const [surname, setSurname] = useState("");
@@ -22,12 +23,6 @@ const SIRegisterScreen = () => {
   return (
     <div className="si-register">
       <ResponsiveMenu classAddin="register" />
-      <ToastMessage
-        show={true}
-        type="success"
-        textHeader={"Registration Completed"}
-        textBody={"You have successfully registered"}
-      />
       <div className="si-register__content">
         <div className="si-register__content-formArea">
           <h1>
@@ -131,6 +126,7 @@ const SIRegisterScreen = () => {
             </div>
           </form>
           <span className="form-terms">By clicking the "Sign Up" button, you are creating a SecondsIn account, and you agree to SecondsIn's <NavLink to="/">Terms of Use</NavLink> and <NavLink to="/">Privacy Policy.</NavLink></span>
+          <SIFooter/>
         </div>
         <div className="si-register__content-imgFrame">
           <img src="./assets/images/rugby.jpg" alt="multi-sport" />
