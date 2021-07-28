@@ -15,7 +15,7 @@ import "./CarouselStyles.css";
 // install Swiper modules
 SwiperCore.use([EffectFade, Navigation, Pagination]);
 
-const CarouselBody = () => {
+const CarouselBody = ({items, brand}) => {
   return (
     <div className="carouselBody">
         <Swiper
@@ -30,9 +30,20 @@ const CarouselBody = () => {
         className="article_slider"
         
       >
+      {items && items.map(item => (
+          <SwiperSlide className="article_slider__item">
+          <CarouselItem
+            imageLink={item.imageLink}
+            date={item.datePosted}
+            title={item.title}
+            textContent={item.shortDescription}
+            linkName={`READ MORE`}
+          />
+          </SwiperSlide>
+        ))}
         <SwiperSlide className="article_slider__item">
           <CarouselItem
-            imageLink={`./assets/images/gameplay.jpeg`}
+            imageLink={`/assets/images/gameplay.jpeg`}
             date={`Just in`}
             title={`Lorem Ipsum Dolar`}
             textContent={`In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.`}
@@ -41,7 +52,7 @@ const CarouselBody = () => {
           </SwiperSlide>
           <SwiperSlide className="article_slider__item">
           <CarouselItem
-            imageLink={`./assets/images/splash.jpg`}
+            imageLink={`/assets/images/splash.jpg`}
             date={`1 Day Ago`}
             title={`Lorem Ipsum Dolar`}
             textContent={`In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.`}
@@ -50,7 +61,7 @@ const CarouselBody = () => {
           </SwiperSlide>
           <SwiperSlide className="article_slider__item">
             <CarouselItem
-                imageLink={`./assets/images/d_wade.jpg`}
+                imageLink={`/assets/images/d_wade.jpg`}
                 date={`2 Days ago`}
                 title={`Lorem Ipsum Dolar Lorem Dolar`}
                 textContent={`In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.`}
@@ -58,7 +69,7 @@ const CarouselBody = () => {
             />
           </SwiperSlide>
         <div className="article_slider__pagination" />
-        <span className="carousel-brand"><img src="./assets/images/chelsea__logo.png" alt="brand"/></span>
+        <span className="carousel-brand">{brand}</span>
       </Swiper>
         
       </div>

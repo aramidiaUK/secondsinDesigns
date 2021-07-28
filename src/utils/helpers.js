@@ -185,5 +185,33 @@ export const returnSportTypeIcon = (sportType, football, rugby, basketball, amer
   return sportType === 'football' ? football : sportType === 'affootball' ? americanFootball : sportType === 'rugby' ? rugby : sportType === basketball ?  'basketball' :  defaultIcon
 }
 
+export const setStylesVars = async() => {
+  
+  const doc = document.querySelector(":root");
+  doc.style.setProperty("--ClubPrimaryColor", '#c70101');
+  doc.style.setProperty("--ClubNavLinksFontColor", 'white');
+  doc.style.setProperty("--ClubFooterColor", '#000');
+  doc.style.setProperty("--ClubBackgroundImage", 'url(/assets/images/manu__logo.png)')
+  doc.style.setProperty("--ClubFooterLinksColor", '#fff')
+  doc.style.setProperty("--ClubCardRadius", '0px')
+  doc.style.setProperty("--ClubButtonRadius", '0px')
+  doc.style.setProperty("--ClubTransitionSpeed", '1s')
+
+
+  // --ClubPrimaryColor: black;
+  // --ClubSecondaryColor: grey;
+  // --ClubAltColor: #000;
+  // --ClubFooterColor: #000;
+  // --ClubFooterLinksColor: #fff;
+  // --ClubNavLinksFontColor: #fff;
+  // --ClubSecondaryFontColor: #000;
+  // --ClubTagsBgColor: var(--ClubPrimaryColor);
+  // --ClubTagsFontColor: var(--ClubNavLinksFontColor);
+  // --ClubCardRadius: 5px;
+  // --ClubButtonRadius: 5px;
+  // --ClubImageZoom: scale(1.5);
+  // --ClubTransitionSpeed: 0.3s;
+}
+
 
 

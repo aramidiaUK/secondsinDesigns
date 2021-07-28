@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const ThemNavbarItem = ({linkName, customStyles}) => {
+const ThemNavbarItem = ({linkName, customStyles, children}) => {
   return (
     <li className="themed-nav__content-list-item">
       <NavLink
@@ -11,6 +11,7 @@ const ThemNavbarItem = ({linkName, customStyles}) => {
       >
         {linkName}
       </NavLink>
+      {children}
     </li>
   );
 };

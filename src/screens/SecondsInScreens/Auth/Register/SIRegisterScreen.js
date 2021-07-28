@@ -5,7 +5,6 @@ import DateEntry from "../../../../components/DateEntryInput/DateEntry";
 import PasswordInput from "../../../../components/PasswordStrengthChecker/PasswordInput";
 import { NavLink } from "react-router-dom";
 import CustomCheckbox from "../../../../components/CheckboxDesign/CustomCheckbox";
-import ToastMessage from "../../../../components/ToastMessage/ToastMessage";
 import ResponsiveMenu from "../../../../components/ResponsiveMenu/ResponsiveMenu";
 import SIFooter from "../../../../components/SIFooter/SIFooter";
 const SIRegisterScreen = () => {

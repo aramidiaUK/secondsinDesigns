@@ -1,0 +1,35 @@
+.club {
+    .news-card {
+        height: var(--SICard-Height);
+        width: var(--SICard-Width);
+        box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+
+        &.wide {
+            grid-area: auto / auto / auto / span 2;
+            width: auto;
+
+            .news-card__content {
+                grid-template-columns: 1fr 1fr;
+                display: grid;
+                height: 26.25rem;
+
+                &-tag {
+                    left: 10px;
+                    right: auto;
+
+                }
+
+                &-imageBox {
+                    height: 100%;
+                }
+
+                &-footer {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

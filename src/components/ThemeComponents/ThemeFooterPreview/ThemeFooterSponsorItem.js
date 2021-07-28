@@ -1,9 +1,9 @@
 import React from "react";
 
-const ThemeFooterSponsorItem = ({ image, alt }) => {
+const ThemeFooterSponsorItem = ({ linkTo, image, alt }) => {
   return (
     <li>
-      <a href="/">
+      <a href={linkTo || '/'}>
         <img src={image} alt={alt || "sponsor"} />
       </a>
     </li>
