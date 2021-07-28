@@ -2,7 +2,7 @@
     .news-card {
         height: var(--SICard-Height);
         width: var(--SICard-Width);
-        box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+        box-shadow: 0px 1px 4px rgba(226, 184, 184, 0.1);
 
         &.wide {
             grid-area: auto / auto / auto / span 2;

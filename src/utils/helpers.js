@@ -193,9 +193,9 @@ export const setStylesVars = async() => {
   doc.style.setProperty("--ClubFooterColor", '#000');
   doc.style.setProperty("--ClubBackgroundImage", 'url(/assets/images/manu__logo.png)')
   doc.style.setProperty("--ClubFooterLinksColor", '#fff')
-  doc.style.setProperty("--ClubCardRadius", '0px')
-  doc.style.setProperty("--ClubButtonRadius", '0px')
-  doc.style.setProperty("--ClubTransitionSpeed", '1s')
+  doc.style.setProperty("--ClubCardRadius", '3px')
+  doc.style.setProperty("--ClubButtonRadius", '3px')
+  doc.style.setProperty("--ClubTransitionSpeed", '2s')
 
 
   // --ClubPrimaryColor: black;

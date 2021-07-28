@@ -231,7 +231,7 @@ const SIRegisterColorsScreen = () => {
                   <RangeSlider
                     step={0.1}
                     min="0.1"
-                    max="1"
+                    max="3"
                     range={elementTransition}
                     setRange={setElementTransition}
                   />

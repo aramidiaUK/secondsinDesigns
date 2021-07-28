@@ -1,0 +1,67 @@
+.teams {
+    .news {
+        background: #fff;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.4);
+
+        &-content {
+            padding: 3rem 0;
+        }
+
+        .team-card {
+            .team-card__content-text:after {
+    
+                border-bottom: 5px solid var(--ClubFooterColor);
+                border-top: 5px solid var(--ClubFooterColor);
+    
+            }
+            .team-card__content-text--content {
+                max-width: 35%;
+                h1 {
+                    color: var(--ClubNavLinksFontColor);
+                }
+                &:after,
+                &:before {
+                    background: var(--ClubPrimaryColor);
+                }
+    
+            }
+        }
+    }
+
+    .team-card:nth-child(2n) {
+        .team-card__content-text:after {
+
+            border-bottom: 5px solid var(--ClubFooterColor);
+            border-top: 5px solid var(--ClubFooterColor);
+
+        }
+        .team-card__content-text--content {
+            h1 {
+                color: var(--ClubNavLinksFontColor);
+            }
+            &:after,
+            &:before {
+                background: var(--ClubPrimaryColor);
+            }
+
+        }
+    }
+
+    &-content {
+        margin: 0 auto;
+        width: var(--DesktopWidth);
+        position: relative;
+        padding: 2rem 0;
+
+        &-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 2rem 0;
+            gap: 2rem 1rem;
+        }
+    }
+
+    .util-card__content-captionOptions {
+        border-left: none;
+    }
+}

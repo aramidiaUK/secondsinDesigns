@@ -30,9 +30,8 @@ const VideoPlayer = () => {
             post={{
               author: {
                 user: {
-                  full_name: "Henry Akinola",
-                  occupation: "Club Manager",
-                  imageLink: "/assets/images/person1.jpeg"
+                  full_name: "Michael Angelo",
+                  occupation: "Lead Editor",
                 }
               }
             }}
@@ -45,9 +44,9 @@ const VideoPlayer = () => {
             post={{
               author: {
                 user: {
-                  full_name: "Henry Akinola",
-                  occupation: "Club Manager",
-                  imageLink: "/assets/images/person1.jpeg"
+                  full_name: "Mitch Johnson",
+                  occupation: "First Team Coach",
+                  imageLink: "/assets/images/person2.jpeg"
                 }
               }
             }}

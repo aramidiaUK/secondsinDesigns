@@ -14,7 +14,7 @@ const VideoCard = ({
     <div className={`util-card ${classAddin}`} {...stylesProps}>
       <div className="util-card__content">
         <span className="util-card__content-tag">Video</span>
-        <span className="util-card__content-play-btn"><i class='bx bx-play' ></i></span>
+        <div className="util-card__content-play-btn"><span className="util-card__content-play-btn__container"><i class='bx bx-play' ></i></span></div>
         <div className="util-card__content-imageBox">
           <img src={backdropImageLink} alt="util" />
         </div>

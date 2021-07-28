@@ -1,16 +1,27 @@
 import React from "react";
 
-const ClubContentRow = ({header, subHeader, parentClass, classAddin, children}) => {
+const ClubContentRow = ({
+  header,
+  subHeader,
+  parentClass,
+  classAddin,
+  children
+}) => {
   return (
     <div className={`${parentClass} ${classAddin && classAddin}`}>
       <div className={`${parentClass}-content`}>
-        <header className={`${parentClass}-content-header`}>
-          <h1>
-            {header} {subHeader && <span>{subHeader}</span>}
-          </h1>
-        </header>
+        {header &&
+          <header className={`${parentClass}-content-header`}>
+            <h1>
+              {header}{" "}
+              {subHeader &&
+                <span>
+                  {subHeader}
+                </span>}
+            </h1>
+          </header>}
         <div className={`${parentClass}-content-cards`}>
-            {children}
+          {children}
         </div>
       </div>
     </div>
@@ -18,7 +29,7 @@ const ClubContentRow = ({header, subHeader, parentClass, classAddin, children}) 
 };
 
 ClubContentRow.defaultProps = {
-    parentClass : 'news'
-}
+  parentClass: "news"
+};
 
 export default ClubContentRow;

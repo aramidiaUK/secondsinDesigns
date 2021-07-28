@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./ThemedNavbarStyles.scss";
-const ThemedNavbar = ({ mainSponsors, newsContent, children, buttonsAddin }) => {
+const ThemedNavbar = ({ mainSponsors, newsContent, children, buttonsAddin, homeLink }) => {
   return (
     <nav className="themed-nav">
       <div className="themed-nav__top-bar">
@@ -14,9 +15,9 @@ const ThemedNavbar = ({ mainSponsors, newsContent, children, buttonsAddin }) => 
         </div>
       </div>
       <div className="themed-nav__content">
-        <div className="themed-nav__content-brand">
+        <NavLink to={homeLink || '#'} className="themed-nav__content-brand">
           <img src="/assets/images/manu__logo.png" alt="nav-brand" />
-        </div>
+        </NavLink>
         <ul className="themed-nav__content-list">
           {children}
         </ul>
