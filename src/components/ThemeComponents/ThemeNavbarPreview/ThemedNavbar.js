@@ -25,7 +25,7 @@ const ThemedNavbar = ({ mainSponsors, newsContent, children, buttonsAddin, homeL
             <div className="themed-nav__content-account-options-content">
             {buttonsAddin}
             <button type="button">
-              <i class="bx bx-search" />
+              <i className="bx bx-search" />
               <span>Search</span>
             </button>
             </div>

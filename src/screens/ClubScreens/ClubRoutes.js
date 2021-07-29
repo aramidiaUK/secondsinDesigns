@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router-dom'
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import FullPageLoader from '../../components/Loader/FullPageLoader';
 import { setStylesVars } from '../../utils/helpers';
 import ClubHome from './Home/ClubHome'
+import ClubMedia from './Media/ClubMedia';
+import ClubVideos from './Media/Videos/ClubVideos';
+import ClubNews from './News/ClubNews';
 import ClubTeams from './Teams/ClubTeams';
 
 const ClubRoutes = () => {
@@ -21,6 +23,9 @@ const ClubRoutes = () => {
         <div>
             <Route exact path={`/club/home`} component={ClubHome}/>
             <Route exact path={`/club/lineups`} component={ClubTeams}/>
+            <Route exact path={`/club/news`} component={ClubNews}/>
+            <Route exact path={`/club/media`} component={ClubMedia}/>
+            <Route exact path={`/club/media/videos`} component={ClubVideos}/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ClubNewsRow = () => {
+const ClubImagesTop = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const ClubNewsRow = () => {
     )
 }
 
-export default ClubNewsRow
+export default ClubImagesTop

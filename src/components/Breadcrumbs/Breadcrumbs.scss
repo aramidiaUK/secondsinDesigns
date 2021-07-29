@@ -23,7 +23,7 @@
             padding: 2.5px 10px;
             transition: all .3s ease;
 
-            &.active {
+            &:last-child.active {
                 color: #fff;
                 background: rgba(0,0,0,.4);
                 border-radius: 5px;

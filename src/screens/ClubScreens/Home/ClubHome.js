@@ -4,16 +4,9 @@ import ADCard from "../../../components/Cards/ADCard/ADCard";
 import ClubNavCard from "../../../components/Cards/ClubNavCard/ClubNavCard";
 import NewsCard from "../../../components/Cards/NewsCard/NewsCard";
 import ClubContentRow from "../../../components/ClubContentRow/ClubContentRow";
-import ClubFooter from "../../../components/ClubFooter/ClubFooter";
-import ClubFooterLinksGroup from "../../../components/ClubFooter/ClubFooterLinksGroup";
-import ClubFooterLinksGroupItem from "../../../components/ClubFooter/ClubFooterLinksGroupItem";
 import DisplayedFooter from "../../../components/ClubFooter/DisplayedFooter";
 import ClubNavbar from "../../../components/ClubNavbar/ClubNavbar";
 import ClubSubscribePanel from "../../../components/ClubSubscribePanel/ClubSubscribePanel";
-import ThemeFooterSponsorItem from "../../../components/ThemeComponents/ThemeFooterPreview/ThemeFooterSponsorItem";
-import ThemedNavbar from "../../../components/ThemeComponents/ThemeNavbarPreview/ThemedNavbar";
-import ThemeNavbarItem from "../../../components/ThemeComponents/ThemeNavbarPreview/ThemeNavbarItem";
-import Ticker from "../../../components/Ticker/Ticker";
 import VideoPlayer from "../../../components/VideoPlayer/VideoPlayer";
 import "./ClubHomeStyles.scss";
 const ClubHome = () => {

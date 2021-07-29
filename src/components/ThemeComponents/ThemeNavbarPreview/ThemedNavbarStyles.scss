@@ -138,6 +138,7 @@
                 transition: all .25s ease-out;
                 transition: all .25s ease-out;
 
+                &.active,
                 &:hover {
                     background-size: 100% 4px, auto;
                     transition-delay: .4s;

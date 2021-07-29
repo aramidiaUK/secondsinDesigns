@@ -1,0 +1,16 @@
+.news-top-row {
+    background: #f1f1f1;
+    position: relative;
+    padding: 0;
+
+    .news-content {
+        padding: 3rem 0 0 0;
+    }
+    .news-card.wide {
+        border-right: 4px solid var(--ClubPrimaryColor);
+        &:nth-child(2n) {
+            border-right: 4px solid var(--ClubFooterColor);
+        }
+        
+    }
+}
