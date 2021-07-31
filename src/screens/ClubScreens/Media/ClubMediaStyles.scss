@@ -3,4 +3,13 @@
         grid-area: auto / auto / auto / span 2;
         width: 100%;
     }
+
+    &-mid-row {
+        background: #fff;
+
+        .news-content {
+            padding: 2rem 0 4rem 0;
+        }
+
+    }
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import VideoCard from '../Cards/VideoCard/VideoCard'
 import ClubContentRow from '../ClubContentRow/ClubContentRow'
 import "./VideoPlayer.scss";
-const VideoPlayer = () => {
+const VideoPlayer = ({header, subHeader}) => {
     return (
-        <ClubContentRow header="Media" subHeader="New videos" classAddin="videos">
+        <ClubContentRow header={header || "Media"} subHeader={subHeader || "New videos"} classAddin="videos">
         <div className="player-w-playList">
             <VideoCard 
             backdropImageLink={"/assets/images/fans.jpeg"}

@@ -38,7 +38,7 @@ const DisplayedFooter = () => {
       <ClubFooterLinksGroup>
         <ClubFooterLinksGroupItem linkName="home" />
         <ClubFooterLinksGroupItem linkName="News" />
-        <ClubFooterLinksGroupItem linkName="Images" />
+        <ClubFooterLinksGroupItem linkName="Photos" />
         <ClubFooterLinksGroupItem linkName="Videos" />
       </ClubFooterLinksGroup>
       <ClubFooterLinksGroup>

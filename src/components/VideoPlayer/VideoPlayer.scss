@@ -1,9 +1,9 @@
 .videos {
-    background: #222;
+    background: radial-gradient(#777, #222);
     padding: 4rem;
 
     .news-content {
-        background: #222;
+        background: transparent;
 
         .news-content-header {
             width: var(--DesktopWidth);

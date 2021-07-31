@@ -28,7 +28,7 @@ const ThemeCardPreview = ({ transitionSettings, radiusSettings }) => {
         <h3 className="theme-component-header">Cards Preview</h3>
         <div className="news-card" style={{ ...cardStyles }}>
           <div className="news-card__content">
-            <span className="news-card__content-tag">News</span>
+            <span className="news-card__content-tag tag">News</span>
             <div className="news-card__content-imageBox">
               <img
                 src="./assets/images/football.jpg"
@@ -49,7 +49,7 @@ const ThemeCardPreview = ({ transitionSettings, radiusSettings }) => {
             </div>
             <div className="news-card__content-footer">
               <div className="news-card__content-footer-author">
-                <img src="./assets/images/chelsea__logo.png" />
+                <img src="./assets/images/chelsea__logo.png" alt="brand"/>
                 <div className="name">
                   <span className="author">John Smith</span>
                   <span className="function">Club Manager</span>

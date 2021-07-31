@@ -5,7 +5,7 @@ import ClubContentRow from "../../../../components/ClubContentRow/ClubContentRow
 
 const ClubVideosTop = () => {
   return (
-    <ClubContentRow parentClass="news" classAddin="videos-top-row">
+    <ClubContentRow parentClass="news" classAddin="videos-top-row" header="Latest" subHeader="Recently Added Videos">
       <VideoCard
         backdropImageLink={"/assets/images/football-2.jpg"}
         sponsorImageLink={"/assets/images/espnSponsor.png"}

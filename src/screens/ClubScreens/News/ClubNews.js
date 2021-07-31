@@ -46,7 +46,7 @@ const ClubNews = () => {
               title: "Example news card - new club added to the S...",
               shortDescription:
                 "In publishing and graphic des ign, Lorem ipsum may be used as a placeholder before final copy is available.",
-              imageLink: "/assets/images/rugby.jpg",
+              imageLink: "/assets/images/basketball.jpg",
               type: "News",
               author: {
                 user: {

@@ -1,0 +1,129 @@
+.images-viewer {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: radial-gradient(#777, #333);
+    padding: 3rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        column-gap: .5rem;
+        width: var(--DesktopWidth);
+        margin: 0 auto;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+
+        &-active {
+            max-width: 100%;
+            max-height: 500px;
+            position: relative;
+            margin: 0 auto;
+            border-radius: var(--ClubCardRadius);
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,.8);
+            
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-imagesRow {
+            position: relative;
+            width: 100%;
+            max-height: 500px;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 35px);
+            grid-gap: .5rem; 
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            .imageBox {
+                margin-top: 4px;
+                vertical-align: middle;
+                width: 100%;
+                border-radius: var(--ClubCardRadius);
+                transition: .4s ease;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block; 
+                }
+
+                &--1 {
+                    grid-column: 1 / span 2;
+                    grid-row: 1 / span 2;
+                }
+
+                &--2 {
+                    grid-column: 3 / span 2;
+                    grid-row: 1 / span 2;
+                }
+
+                &--3 {
+                    grid-column: 5 / span 4;
+                    grid-row: 1 / span 5;
+                }
+
+                &--4 {
+                    grid-column: 1 / span 4;
+                    grid-row: 3 / span 3;
+                }
+
+                &--5 {
+                    grid-column: 1 / span 4;
+                    grid-row: 6 / span 3;
+                }
+
+                &--6 {
+                    grid-column: 5 / span 4;
+                    grid-row: 6 / span 3;
+                }
+
+                &--7 {
+                    grid-column: auto / span 3;
+                    grid-row: auto / span 3;
+                }
+
+                &--8 {
+                    grid-column: auto / span 5;
+                    grid-row: auto / span 2;
+                }
+
+                &--9 {
+                    grid-column: auto / span 5;
+                    grid-row: auto / span 2;
+                }
+
+                &--10 {
+                    grid-column: auto / span 3;
+                    grid-row: auto / span 3;
+                }
+
+                &--11 {
+                    grid-column: auto / span 5;
+                    grid-row: auto / span 2;
+                }
+
+                &--12 {
+                    grid-column: auto / span 6;
+                    grid-row: auto / span 2;
+                }
+                
+            }
+            
+        }
+    }
+}

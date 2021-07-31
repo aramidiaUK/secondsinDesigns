@@ -11,7 +11,7 @@ const ADCard = ({
   return (
     <div className={`util-card`} {...stylesProps}>
       <div className="util-card__content">
-        <span className="util-card__content-tag">Sponsored AD</span>
+        <span className="util-card__content-tag tag">Sponsored AD</span>
         <div className="util-card__content-imageBox">
           <img src={backdropImageLink} alt="util" />
         </div>

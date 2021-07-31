@@ -4,7 +4,7 @@ const NewsCard = ({post, classAddin}) => {
     return (
         <div className={`news-card ${classAddin}`}>
           <div className="news-card__content">
-            <span className="news-card__content-tag">{post.type}</span>
+            <span className="news-card__content-tag tag">{post.type}</span>
             <div className="news-card__content-imageBox">
               <img
                 src={post.imageLink}

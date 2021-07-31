@@ -29,18 +29,8 @@
         flex-direction: column;
 
         &-tag {
-            position: absolute;
             background: var(--ClubTagsBgColor);
-            color: var(--ClubTagsFontColor);
-            border-radius: 3px;
-            padding: .1rem .35rem;
-            right: 10px;
-            top: 10px;
-            font-size: .85rem;
-            font-weight: 500;
-            z-index: 1;
-
-         
+            color: var(--ClubTagsFontColor);         
         }
 
         &-imageBox {

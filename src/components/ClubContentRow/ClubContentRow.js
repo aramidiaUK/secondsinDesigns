@@ -5,6 +5,7 @@ const ClubContentRow = ({
   subHeader,
   parentClass,
   classAddin,
+  columns,
   children
 }) => {
   return (
@@ -20,7 +21,7 @@ const ClubContentRow = ({
                 </span>}
             </h1>
           </header>}
-        <div className={`${parentClass}-content-cards`}>
+        <div className={`${parentClass}-content-cards ${columns && columns}`}>
           {children}
         </div>
       </div>

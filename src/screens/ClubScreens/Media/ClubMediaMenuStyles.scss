@@ -1,7 +1,7 @@
 .media-menu {
     width: 100%;
     padding-top: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -2rem;
     &__content {
         width: var(--DesktopWidth);
         height: 5rem;
@@ -12,41 +12,8 @@
         column-gap: 5rem;
         justify-content: center;
 
-        .btn-wrap:first-child {
-
-            a {
-                color: var(--ClubFooterLinksColor);
-                background: var(--ClubFooterColor);
-            }
-            
-            &:before {
-                content: '';
-                position: absolute;
-                width: 100%;
-                transform: skewX(50deg);
-                display: block;
-                height: 3rem;
-                background: var(--ClubFooterColor);
-                top: 0rem;
-                right: 40px;
-                z-index: 0;
-            }
-
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                transform: skewX(50deg);
-                display: block;
-                height: 3rem;
-                background: var(--ClubFooterColor);
-                top: 0rem;
-                left: 40px;
-                z-index: 0;
-            }
-        }
         .btn-wrap {
-            width: 100px;
+            width: 120px;
             height: 3rem;
             text-align: center;
             display: flex;
@@ -89,6 +56,40 @@
                 display: block;
                 height: 3rem;
                 background: var(--ClubPrimaryColor);
+                top: 0rem;
+                left: 40px;
+                z-index: 0;
+            }
+        }
+
+        .btn-wrap:first-child {
+
+            a {
+                color: var(--ClubFooterLinksColor);
+                background: var(--ClubFooterColor);
+            }
+            
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: skewX(50deg);
+                display: block;
+                height: 3rem;
+                background: var(--ClubFooterColor);
+                top: 0rem;
+                right: 40px;
+                z-index: 0;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: skewX(50deg);
+                display: block;
+                height: 3rem;
+                background: var(--ClubFooterColor);
                 top: 0rem;
                 left: 40px;
                 z-index: 0;

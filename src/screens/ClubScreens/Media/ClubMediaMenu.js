@@ -7,12 +7,12 @@ const ClubMediaMenu = () => {
       <div className="media-menu__content">
         <div className="btn-wrap">
           <NavLink exact to="/club/media/videos" className="btn-alt">
-            Videos
+            Club Videos
           </NavLink>
         </div>
         <div className="btn-wrap">
-          <NavLink exact to="/club/media/images" className="btn-alt">
-            Images
+          <NavLink exact to="/club/media/photos" className="btn-alt">
+            Club Photos
           </NavLink>
         </div>
       </div>

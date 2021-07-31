@@ -14,18 +14,8 @@
         width: 100%;
 
         &-tag {
-            position: absolute;
             background: var(--ClubFooterColor);
-            color: var(--ClubFooterLinksColor);
-            border-radius: 3px;
-            padding: .1rem .35rem;
-            left: 10px;
-            top: 10px;
-            font-size: .85rem;
-            font-weight: 500;
-            z-index: 1;
-
-         
+            color: var(--ClubFooterLinksColor);         
         }
 
 
