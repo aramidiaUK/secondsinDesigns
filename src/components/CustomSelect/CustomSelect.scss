@@ -3,11 +3,12 @@
         border-color: #e1e1e1 !important;
         outline: none;
         box-shadow: 0 3px 2px -5px rgba(0, 0, 0,.27) !important;
+        z-index: 1000;
         
         &:active,
         &:hover {
             border-color: #e1e1e1 !important;
-            box-shadow: 0 3px 2px -5px rgba(0, 0, 0,.27) !important;
+            // box-shadow: 0 3px 2px -5px rgba(0, 0, 0,.27) !important;
         }
     }
 }

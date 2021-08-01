@@ -20,7 +20,7 @@ const ClubImages = () => {
             imageLink="/assets/images/lakers.png"
             header="Bootcamp sessions"
             dateSince="1 Week ago"
-            imagesArray={ ["/assets/images/lakers.png", "/assets/images/mutdStadium.jpg", "/assets/images/nike-logo.png", "/assets/images/d_wade.jpg", "/assets/images/football-2.jpg"]}
+            imagesArray={ ["/assets/images/lakers.png", "/assets/images/mutdStadium.jpg",  "/assets/images/d_wade.jpg", "/assets/images/football-2.jpg"]}
           />
           <ImagesCard
             imageLink="/assets/images/gameplay.jpeg"

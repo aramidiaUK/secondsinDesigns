@@ -5,10 +5,10 @@ import { setStylesVars } from '../../utils/helpers';
 import ClubHome from './Home/ClubHome'
 import ClubMedia from './Media/ClubMedia';
 import ClubImages from './Media/ClubImages/ClubImages';
-import ClubImagesView from './Media/ClubImages/ClubImagesView';
 import ClubVideos from './Media/ClubVideos/ClubVideos';
 import ClubNews from './News/ClubNews';
 import ClubTeams from './Teams/ClubTeams';
+import ClubOpportunities from './Opportunities/ClubOpportunities';
 
 const ClubRoutes = () => {
     const [pageLoading, setPageLoading] = useState(true);
@@ -29,7 +29,7 @@ const ClubRoutes = () => {
             <Route exact path={`/club/media`} component={ClubMedia}/>
             <Route exact path={`/club/media/videos`} component={ClubVideos}/>
             <Route exact path={`/club/media/photos`} component={ClubImages}/>
-            <Route exact path={`/club/media/images/view`} component={ClubImagesView}/>
+            <Route exact path={`/club/opportunities`} component={ClubOpportunities}/>
         </div>
     )
 }

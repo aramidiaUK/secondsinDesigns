@@ -1,0 +1,165 @@
+.opportunities-card {
+    width: 100%;
+    background: #fff;
+    border-radius: var(--ClubCardRadius);
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        display: grid;
+        grid-template-columns:  200px 1fr;
+        width: 100%;
+        height: 330px;
+        position: relative;
+        border-radius: var(--ClubCardRadius);
+
+        .tag {
+            left: auto;
+            right: 10px;
+            color: #fff;
+            background: var(--SISecondaryColor);
+
+            &.paid {
+                background: var(--ClubPrimaryColor);
+            }
+
+            &.unpaid {
+                background: var(--ClubFooterColor);
+            }
+        }
+
+        &-imageBox {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &:after {
+                content: '';
+                background: rgba(0,0,0,.3);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-textContent {
+            padding: 1rem;
+            height: 250px;
+            position: relative;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 600;
+                color: rgba(0,0,0,.8);
+                line-height: 40px;
+                text-transform: capitalize;
+                margin-bottom: .5rem;
+                margin-right: 3rem;
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgba(0,0,0,.65);
+                    line-height: 18px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: rgba(0,0,0,.75);
+                line-height: 28px;
+                font-weight: 400;
+            }
+
+            &-details {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: left;
+                justify-self: flex-start;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                bottom: 30px;
+                padding: 0 1rem;
+                left: 0;
+                text-transform: capitalize;
+                column-gap: 1rem;
+
+                .gender,
+                .height,
+                .age,
+                .position {
+                    font-size: 16px;
+                    display: inline-block;
+                    font-weight: 300;
+                    display: flex;
+                    grid-column-gap: .25rem;
+                    column-gap: .5rem;
+                    align-items: center;
+                    color: rgba(0, 0, 0, 0.6);
+                    justify-content: center;
+
+                    span {
+                        font-weight: 200;
+                        margin-bottom: 0;
+                        text-transform: capitalize;
+                        font-size: 24px;
+                        color: var(--ClubPrimaryColor);
+                    }
+                }
+            }
+        }
+
+        &-footer {
+            padding: 1rem;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: .5rem;
+            background: #f9f9f9;
+            width: 100%;
+
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                color: rgba(0,0,0,.4);
+                margin-bottom: .5rem;
+                text-transform: capitalize;
+            }
+
+
+            .btn-group {
+                display: flex;
+                justify-content: space-between;
+                column-gap: .5rem;
+
+                .btn {
+                    font-weight: 400;
+                    border-radius: var(--ClubButtonRadius);
+                    font-size: 14px;
+                    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+                    border: 2px solid transparent;
+                    width: 130px;
+                    text-align: center;
+    
+                    &.quick-apply {
+                        background: #fff !important;
+                        border: 2px solid var(--ClubPrimaryColor);
+                        color: var(--ClubPrimaryColor) !important;
+                    }
+                }
+            }
+        }
+    }
+}

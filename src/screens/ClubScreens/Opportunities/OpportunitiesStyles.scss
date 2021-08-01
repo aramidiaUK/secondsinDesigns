@@ -1,0 +1,28 @@
+.opportunities {
+    background: #f1f1f1;
+
+    header {
+        width: var(--DesktopWidth);
+        margin:  2rem auto 0rem auto;
+    }
+    &-body {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        width: var(--DesktopWidth);
+        margin: 3rem auto;
+        column-gap: 2rem;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
+
+    .opportunities-card {
+        .btn {
+            background: var(--ClubPrimaryColor);
+            color: var(--ClubNavLinksFontColor);
+        }
+    }
+}

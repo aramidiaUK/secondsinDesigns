@@ -21,7 +21,7 @@ const ClubNavbar = () => {
         </div>
       </ThemeNavbarItem>
       <ThemeNavbarItem linkName="Media" linkTo={"/club/media"}/>
-      <ThemeNavbarItem linkName="Opportunities" />
+      <ThemeNavbarItem linkName="Opportunities" linkTo={"/club/opportunities"}/>
       <ThemeNavbarItem linkName="Schedule" />
       <ThemeNavbarItem linkName="About" />
       <ThemeNavbarItem linkName="Store"  linkTo={"/club/store"}/>
