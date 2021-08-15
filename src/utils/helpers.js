@@ -188,13 +188,13 @@ export const returnSportTypeIcon = (sportType, football, rugby, basketball, amer
 export const setStylesVars = async() => {
   
   const doc = document.querySelector(":root");
-  doc.style.setProperty("--ClubPrimaryColor", '#c70101');
+  doc.style.setProperty("--ClubPrimaryColor", '#DA291C');
   doc.style.setProperty("--ClubNavLinksFontColor", 'white');
   doc.style.setProperty("--ClubFooterColor", '#000');
   doc.style.setProperty("--ClubBackgroundImage", 'url(/assets/images/manu__logo.png)')
   doc.style.setProperty("--ClubFooterLinksColor", '#fff')
-  doc.style.setProperty("--ClubCardRadius", '3px')
-  doc.style.setProperty("--ClubButtonRadius", '3px')
+  doc.style.setProperty("--ClubCardRadius", '5px')
+  doc.style.setProperty("--ClubButtonRadius", '5px')
   doc.style.setProperty("--ClubTransitionSpeed", '2s')
 
 

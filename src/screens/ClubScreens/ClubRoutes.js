@@ -9,6 +9,10 @@ import ClubVideos from './Media/ClubVideos/ClubVideos';
 import ClubNews from './News/ClubNews';
 import ClubTeams from './Teams/ClubTeams';
 import ClubOpportunities from './Opportunities/ClubOpportunities';
+import ClubSchedule from './Schedule/ClubSchedule';
+import ClubAbout from './About/ClubAbout';
+import ClubContact from './Contact/ClubContact';
+import ClubPlayers from './Teams/Players/ClubPlayers';
 
 const ClubRoutes = () => {
     const [pageLoading, setPageLoading] = useState(true);
@@ -25,11 +29,15 @@ const ClubRoutes = () => {
         <div>
             <Route exact path={`/club/home`} component={ClubHome}/>
             <Route exact path={`/club/lineups`} component={ClubTeams}/>
+            <Route exact path={`/club/lineups/team`} component={ClubPlayers}/>
             <Route exact path={`/club/news`} component={ClubNews}/>
             <Route exact path={`/club/media`} component={ClubMedia}/>
             <Route exact path={`/club/media/videos`} component={ClubVideos}/>
             <Route exact path={`/club/media/photos`} component={ClubImages}/>
             <Route exact path={`/club/opportunities`} component={ClubOpportunities}/>
+            <Route exact path={`/club/schedule`} component={ClubSchedule}/>
+            <Route exact path={`/club/about`} component={ClubAbout}/>
+            <Route exact path={`/club/contact`} component={ClubContact}/>
         </div>
     )
 }

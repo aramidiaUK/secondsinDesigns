@@ -32,7 +32,7 @@ const VideoCard = ({
             <div className="news-card__content-footer-author">
               <img
                 src={
-                  post.author.user.imageLink || "/assets/images/manu__logo.png"
+                  post.author.user.imageLink || window.$fallbackLogo
                 }
                 alt={"club brand"}
               />

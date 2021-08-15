@@ -399,6 +399,17 @@ body {
   min-height: 100vh;
   height: 100%;
 
+  .btn {
+    color: var(--ClubNavLinksFontColor);
+  }
+
+  .form-text-entry {
+    &:focus,
+    &:active {
+        border-bottom-color: var(--ClubPrimaryColor);
+    }
+  }
+
   .themed-nav {
       width: 100%;
       margin: 0 auto;
@@ -445,6 +456,7 @@ body {
               .mega-element {
                 height: 0;
                 position: fixed;
+                overflow: hidden;
                 opacity: 0;
                 background: #f9f9f9;
                 width: 100%;
@@ -455,6 +467,7 @@ body {
                 box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
                 transition: opacity .3s ease;
                 border-bottom: 4px solid var(--ClubPrimaryColor);
+                pointer-events: none;
 
                 &:before {
                   content: '';
@@ -486,6 +499,8 @@ body {
                   opacity: 1;
                   height: 400px;
                   padding: 30px;
+                  overflow: unset;
+                  pointer-events: auto;
                 }
               }
             }
@@ -530,7 +545,7 @@ body {
     position: relative;
     z-index: 0;
     background: rgb(249, 249, 249);
-    height: 50vh;
+    height: 55vh;
 
       &-item {
         height: 100%;
@@ -539,7 +554,6 @@ body {
 
         img {
           width: 100%;
-          height: 100%;
           object-fit: cover;
           position: absolute;
         }
@@ -626,6 +640,7 @@ body {
           .btn {
             background: var(--ClubPrimaryColor);
             border-radius: var(--ClubButtonRadius);
+            color: var(--ClubNavLinksFontColor);
           }
         }
   
@@ -664,7 +679,7 @@ body {
 
     &:after {
       content:  '';
-      background: rgba(0, 0, 0, .27);
+      background: rgba(0, 0, 0, .1);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -699,6 +714,7 @@ body {
           font-size: 16px;
           border-radius: var(--ClubButtonRadius);
           background: var(--ClubPrimaryColor);
+          color: var(--ClubNavLinksFontColor);
           font-weight: 500;
         }
     }

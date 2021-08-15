@@ -28,14 +28,12 @@ const ClubHome = () => {
       <ClubNavbar/>
       <div
         className="club-carousel"
-        onMouseOver={e => (e.currentTarget.style.zIndex = 1)}
-        onMouseLeave={e => (e.currentTarget.style.zIndex = 0)}
       >
         <div className="club-carousel-item active">
-          <img src="/assets/images/fans.jpeg" alt="gameplay" />
+          <img src={window.$stadiumImageLink} alt="gameplay" />
           <div className="club-carousel-item-content">
             <div className="club-carousel-item-content-textBox">
-              <h1>Manchester united agree a deal for young striker...</h1>
+              <h1>{window.$clubShortenedName} agree a deal for young Center...</h1>
               <div className="club-carousel-item-content-textBox-buttonHold">
                 <NavLink to="/" className="btn">
                   Read More
@@ -45,7 +43,7 @@ const ClubHome = () => {
           </div>
         </div>
       </div>
-      <ClubSubscribePanel clubName="Manchester United" />
+      <ClubSubscribePanel clubName={window.$clubName} />
       <div className="mid">
         <ClubContentRow
           header="News"

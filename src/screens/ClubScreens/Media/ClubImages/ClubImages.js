@@ -34,6 +34,12 @@ const ClubImages = () => {
             dateSince="1 Week ago"
             imagesArray={ ["/assets/images/nba.png", "/assets/images/nflsponsor.png", "/assets/images/fa.jpeg", "/assets/images/chelsea__logo.png", "/assets/images/football.jpg"]}
           />
+          <ImagesCard
+            imageLink="/assets/images/nba.png"
+            header="Great training session with the youth team"
+            dateSince="1 Week ago"
+            imagesArray={ ["/assets/images/nba.png", "/assets/images/nflsponsor.png", "/assets/images/fa.jpeg", "/assets/images/chelsea__logo.png", "/assets/images/football.jpg"]}
+          />
         </ClubContentRow>
       </div>
       <DisplayedFooter />

@@ -37,7 +37,11 @@
 
                         &:hover {
                             .util-card__content-captionOptions {
-                                height: 40%;
+                                height: 50%;
+                            }
+
+                            .util-card__content-captionOptions-brand {
+                                height: 0;
                             }
                         }
 

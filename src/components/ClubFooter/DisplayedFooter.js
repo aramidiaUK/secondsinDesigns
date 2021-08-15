@@ -7,7 +7,7 @@ import ClubFooterLinksGroupItem from "./ClubFooterLinksGroupItem";
 const DisplayedFooter = () => {
   return (
     <ClubFooter
-      clubName="Manchester United"
+      clubName={window.$clubName}
       sponsorItems={[
         <ThemeFooterSponsorItem
           key={1}

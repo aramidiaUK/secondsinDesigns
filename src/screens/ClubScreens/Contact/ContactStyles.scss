@@ -1,0 +1,123 @@
+.contact {
+    
+    &__content {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 1rem;
+
+        .news-content {
+            display: block;
+            grid-area: auto / auto / auto / span 4;
+            padding: 2rem 0;
+
+        }
+
+        &-staff {
+            width: var(--DesktopWidth);
+            margin: 0 auto;
+            padding: 1rem 0;
+            display: grid;
+
+            header.news-content-header {
+                &::after {
+                    border-bottom: 4px solid var(--ClubFooterColor);
+                }
+            }
+
+            &-content {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.75rem 1rem;
+            }
+            
+        }
+
+        &-reach {
+            background: #fff;
+            min-height: 30rem;
+            width: 100%;
+            margin: 0 auto;
+            
+            &-content {
+                width: var(--DesktopWidth);
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 25rem;
+                align-items: center;
+                padding: 3rem 0;
+
+
+                .formArea { 
+                    max-width: 90%;
+                    min-width: 360px;
+                    form {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        textarea {
+                            width: 100%;
+                            padding: .6rem;
+                            height: 15rem;
+                            resize: none;
+                        }
+                        
+                        .checkbox-custom {
+                            label {
+                            display: flex;
+                            align-items: center;
+                            }
+                            .checkbox-text {
+                                font-size: 13px;
+                                color: rgba(0,0,0,.6);
+                                line-height: 1.5rem;
+                                font-weight: 400;
+
+                                strong {
+                                    color: var(--SIPrimaryColor);
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        button {
+                            width: 100%;
+                            font-size: 1rem;
+                            background: var(--ClubPrimaryColor);
+                            border-radius: var(--ClubButtonRadius);
+                            color: var(--ClubNavLinksFontColor);
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .contact-address {
+                    font-style: normal;
+                    line-height: 30px;
+
+                    h1,h2,h3,h4 {
+                        font-weight: 600;
+                        color: rgba(0,0,0,.7);
+                    }
+
+                    h1 {
+                        font-size: 1.7rem;
+                        font-weight: 600;
+                    }
+
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+
+                    a {
+                        color: var(--ClubPrimaryColor);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

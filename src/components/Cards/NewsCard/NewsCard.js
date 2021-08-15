@@ -23,7 +23,7 @@ const NewsCard = ({post, classAddin}) => {
             </div>
             <div className="news-card__content-footer">
               <div className="news-card__content-footer-author">
-                <img src={post.author.user.imageLink || '/assets/images/manu__logo.png'} alt={'club brand'} />
+                <img src={post.author.user.imageLink || window.$fallbackLogo} alt={'club brand'} />
                 <div className="name">
                   <span className="author">{post.author.user.full_name}</span>
                   <span className="function">{post.author.user.occupation}</span>

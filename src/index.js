@@ -5,8 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 window.$fallbackLogo = "/assets/images/manu__logo.png";
-window.$fallbackFlag  = "/assets/images/manu__logo.png"
-window.$verifyBackDrop  = "/assets/images/verify.png"
+window.$opponentsLogo = "/assets/images/bucks.png";
+window.$fallbackFlag  = "/assets/images/manu__logo.png";
+window.$verifyBackDrop  = "/assets/images/verify.png";
+window.$clubName = "Manchester United";
+window.$clubShortenedName = "Man Utd";
+window.$stadiumImageLink = "/assets/images/stadiums/football.jpg";
 
 ReactDOM.render(
   <React.StrictMode>

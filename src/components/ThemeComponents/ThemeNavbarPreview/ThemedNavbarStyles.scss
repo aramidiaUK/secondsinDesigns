@@ -4,6 +4,7 @@
     margin: 0 auto;
     background: #034694;
     border-radius: 5px;
+    z-index: 1;
 
     &.sticky {
         column-gap: 0.5rem;
@@ -44,9 +45,11 @@
         &-content {
             position: relative;
             line-height: 2.5rem;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
             column-gap: 2rem;
+            align-items: center;
+            grid-template-columns: 1fr 10rem;
+            justify-items: end;
 
             .news-reel {
                 width: calc(var(--DesktopWidth) - 550px);
@@ -65,10 +68,12 @@
         }
 
         .main-sponsors { 
-            display: flex;
-            justify-content: space-between;
-            column-gap: 1rem;
-            width: 10rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: .5rem;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
             &-item {
 
                 img {

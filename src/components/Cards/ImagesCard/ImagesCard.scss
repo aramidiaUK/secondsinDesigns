@@ -1,6 +1,6 @@
 .w-widget {
     grid-area: auto / auto / auto / span 2;
-    transition: height .3s ease;
+    // transition: height .05s ease;
     height: var(--SICard-Height);
     width: 100%;
     cursor: pointer;
@@ -21,7 +21,7 @@
             pointer-events: none;
             bottom: 1em;
             left: 50%;
-            border-color: #fff transparent transparent transparent;
+            border-color: #f1f1f1 transparent transparent transparent;
             border-width: 10px;
             border-style: solid;
             bottom: 0;

@@ -5,7 +5,7 @@ const ClubNavCard = ({text}) => {
         <div div className="clubNav-card">
             <div className="clubNav-card__content">
                 <div className="clubNav-card__content-imageBox">
-                    <img src="/assets/images/manu__logo.png" alt="brand"/>
+                    <img src={window.$fallbackLogo} alt="brand"/>
                 </div>
                 <div className="clubNav-card__content-text">
                     <span>{text}</span>

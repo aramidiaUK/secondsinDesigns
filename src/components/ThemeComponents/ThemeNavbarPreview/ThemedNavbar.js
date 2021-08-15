@@ -16,7 +16,7 @@ const ThemedNavbar = ({ mainSponsors, newsContent, children, buttonsAddin, homeL
       </div>
       <div className="themed-nav__content">
         <NavLink to={homeLink || '#'} className="themed-nav__content-brand">
-          <img src="/assets/images/manu__logo.png" alt="nav-brand" />
+          <img src={window.$fallbackLogo} alt="nav-brand" />
         </NavLink>
         <ul className="themed-nav__content-list">
           {children}

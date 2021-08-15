@@ -1,0 +1,11 @@
+.players {
+
+    &__content {
+        width: var(--DesktopWidth);
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        display: grid;
+        gap: 1.5rem 1rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

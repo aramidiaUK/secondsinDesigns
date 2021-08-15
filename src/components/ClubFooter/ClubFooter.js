@@ -1,4 +1,5 @@
 import React from "react";
+import "./ClubFooter.scss"
 
 const ClubFooter = ({ clubName, children, sponsorItems, socialLinks }) => {
   return (
@@ -21,7 +22,7 @@ const ClubFooter = ({ clubName, children, sponsorItems, socialLinks }) => {
               <h4>
                 {clubName}
               </h4>
-              <img src="/assets/images/manu__logo.png" alt="club brand" />
+              <img src={window.$fallbackLogo} alt="club brand" />
             </div>
           </div>
         </div>
