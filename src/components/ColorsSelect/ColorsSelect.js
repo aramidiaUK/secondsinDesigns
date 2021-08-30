@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { BlockPicker } from 'react-color';
 import "./ColorsSelect.scss";
 const ColorSelect = ({ labelText, name, color, setColor, subTitle }) => {
+  
+  const [showPicker, setShowPicker] = useState(false);
+
+  const showColorPicker  =  () => {
+    setShowPicker(showPicker ? false : true);
+  }
+
   return (
     <div className="form-group">
       <label>
@@ -12,20 +20,23 @@ const ColorSelect = ({ labelText, name, color, setColor, subTitle }) => {
             <span
               className="color-preview"
               style={{
-                backgroundColor: "rgba(0,0,0)"
+                backgroundColor: `${(color && (color?.hex || color)) || '#000'}`
               }}
             />
             <span className="color-name">
-              {"Black"}
+              {`${(color && (color?.hex || color)) || '#000'}`}
             </span>
           </p>
         </div>
         <button
           type="button"
-          onClick={e => e.preventDefault()}
+          onClick={() => { showColorPicker() }}
         >
           Select
         </button>
+        <div className="block-picker-container" style={{display: `${showPicker ? 'flex' : 'none'}`}}>
+          <BlockPicker color={color} onChangeComplete={setColor}/> 
+        </div>
       </div>
     </div>
   );

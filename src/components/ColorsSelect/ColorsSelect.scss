@@ -59,5 +59,15 @@
         font-size: 1rem;
       }
     }
+
+    .block-picker-container {
+      margin-top: 1rem;
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      top: 35px;
+      right: 160px;
+    }
   }
   

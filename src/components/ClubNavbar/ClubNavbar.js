@@ -1,5 +1,4 @@
 import React from "react";
-import ThemeFooterSponsorItem from "../ThemeComponents/ThemeFooterPreview/ThemeFooterSponsorItem";
 import ThemedNavbar from "../ThemeComponents/ThemeNavbarPreview/ThemedNavbar";
 import ThemedNavbarSponsorItem from "../ThemeComponents/ThemeNavbarPreview/ThemedNavbarSponsorItem";
 import ThemeNavbarItem from "../ThemeComponents/ThemeNavbarPreview/ThemeNavbarItem";
